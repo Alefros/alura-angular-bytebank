@@ -3,9 +3,16 @@ import { Component } from "@angular/core";
 @Component({
     selector: 'app-nova-transferencia',
     templateUrl: './nova-transferencia.component.html',
-    styleUrls: ['./novas-transferencia.component.scss']
+    styleUrls: ['./nova-transferencia.component.scss']
 })
 
 export class NovaTransferenciaComponent{
 
+    valor: number = 0;
+    destino: number = 0;
+
+    transferir(){
+      console.log('valor: ', this.valor);
+      console.log('destino: ', this.destino);
+    }
 }
