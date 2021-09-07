@@ -20,8 +20,6 @@ export class NovaTransferenciaComponent{
     transferir(){
       const valorEmitir: Transferencia = { valor: this.valor, destino: this.destino };
 
-      // this.aoTransferir.emit(valorEmitir);
-
       this.service.adicionar(valorEmitir).subscribe(
         (sucesso) => {
           console.log(sucesso)
